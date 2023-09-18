@@ -1,0 +1,28 @@
+.footer{
+    background-color: #000;
+    padding: 2rem 1rem;
+    overflow: hidden;
+    top: 100%;
+    position: sticky;
+}
+
+h2{
+    color: white;
+    font-size: x-large;
+    font-family: DM Serif Display, serif; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0 0.8rem;
+    font-size: medium;
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+i{
+    color: white;
+}

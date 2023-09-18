@@ -1,0 +1,30 @@
+<div class="container"> 
+    <div class="row">
+        <div class="product-card col-lg-6 mb-4" *ngIf="productData">
+            <a routerLink="../../products" class="backbtn"><i class="bi bi-arrow-left"></i> Voltar</a>
+
+            <img src="{{ productData[0].ShoeImg }}" width="100%" alt="Produto {{ productData[0].id}}">
+            <h2>{{ productData[0].ShoeName }}</h2>
+            <p> {{ productData[0].ShoeDetails }} </p>
+            <p> {{ productData[0].ShoePrice | currency: 'BRL' }} </p>
+
+        </div>
+
+        <div class="buyform col-lg-6 col-12">
+            <h1>Preencha suas informações</h1>
+            <form class="form-control">
+
+                <input type="text" class="form-control mt-3 mb-2" placeholder="Digite seu nome completo" />
+                <input type="text" class="form-control mb-2" placeholder="Digite seu número" />
+                <textarea class="form-control" placeholder="Digite seu endereço"></textarea>
+                <br>
+                <button class="buybtn mt-2 mb-2">Comprar</button>
+
+            </form>
+
+
+        </div> 
+
+
+    </div>
+</div>

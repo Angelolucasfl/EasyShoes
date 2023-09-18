@@ -1,0 +1,18 @@
+.about-main{
+    display: flex;
+    gap: 8rem;
+}
+
+.container img{
+    width: 40%;
+    margin-top: 12rem;
+}
+
+.container p{
+    margin-top: 12rem;
+}
+
+p{
+    font-size: large;
+    
+}

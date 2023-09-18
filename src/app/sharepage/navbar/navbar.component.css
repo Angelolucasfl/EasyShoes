@@ -1,0 +1,25 @@
+.active-link{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.navbar-brand{
+    font-family: DM Serif Display, serif; 
+    font-size: xx-large;
+}
+
+.main-nav{
+    background: var(--primary-color);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.nav-item{
+    font-weight: bold;
+}
+
+.nav-logo{
+    margin-left: 5rem;
+}

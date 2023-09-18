@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor = "let shoe of shoeData; index as i">
+
+            <div class="shoeBox ">
+                <img src="{{ shoe.ShoeImg }}" alt="Calçado {{ i }}">
+                <h2>{{ shoe.ShoeName }}</h2>
+                <p>{{ shoe.ShoeDetails }}</p>
+                <p>{{ shoe.ShoePrice | currency:'BRL'}}$</p>
+                <a class="buybtn" [routerLink]="['/product',shoe.id]">Comprar  &nbsp; <i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+</div>

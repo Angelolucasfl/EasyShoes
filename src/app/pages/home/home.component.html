@@ -1,0 +1,50 @@
+<div class="banner">
+
+    <div class="call-action">
+        <h1>Estilo fácil <br>na ponta dos seus pés</h1>
+
+        <a routerLink="products"> Ver Catálogo <i class="bi bi-arrow-right"></i> </a>
+    </div>
+
+</div>
+
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">3 passos para o seu novo estilo</h1>
+    <div class="row mt-5">
+
+        <div class="col-lg-4 mt-4">
+            <div class="stepBox">
+                <h2>1</h2>
+                <p>Escolha um modelo</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+            <div class="stepBox">
+                <h2>2</h2>
+                <p>Preencha suas informações</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+            <div class="stepBox">
+                <h2>3</h2>
+                <p>Sua entrega será enviada</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4 mb-4">
+    <h2 class="text-center">Calçados em alta</h2>
+    <div class="row">
+        <div class="col-lg-4 mt-4" *ngFor="let shoe of shoeData;index as i">
+            <div class="shoeBox" *ngIf="i <= 2">
+                <img src="{{ shoe.ShoeImg }}" alt="Calçado {{i}}" />
+                <h2>{{shoe.ShoeName}}</h2>
+                <p>{{shoe.ShoePrice | currency:'BRL'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="products" class="viewmorebtn">Veja mais <i class="bi bi-arrow-right"></i></a>
+</div>
